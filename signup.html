@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup page</title>
+    <style>
+        h1 {
+            color: blue;
+            margin-bottom: 20px;
+        }
+        h1:hover {
+            color: blueviolet;
+        }
+        body {
+            background-color: rgb(86, 113, 137);
+            height: 200vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .card {
+            background-color: rgb(246, 221, 221);
+            padding: 10px;
+            border-radius: 15px;
+            width: 300px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        input {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        input:hover {
+            background-color: rgb(90, 167, 141);
+        }
+        button {
+            padding: 10px;
+            background-color: rgb(174, 100, 100);
+            font-size: larger;
+            color: rgb(4, 4, 61);
+            font-weight: 500px;
+            border-radius: 10px;
+        }
+        button:hover {
+            background-color: rgb(82, 82, 227);
+        }
+        .remember {
+            display: flex;
+            /* align-items: center; */
+             gap: 2px;  /*gap between text and checkbox */
+
+        }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+    <h1>Sign up</h1>
+    <form>
+        <input type="First Name" class="First Name" placeholder="First Name">
+        <input type="Last Name" class="Last Name" placeholder="Last Name">
+        <input type="Email" class="email" placeholder="Email">
+        <input type="Password" class="Password" placeholder="Password">
+        <button type="submit">Sign up</button>
+     <label class="remember">
+        Remember me:
+        <input type="checkbox" value="remember">
+     </label>
+    </form>
+  </body>
+</html>
