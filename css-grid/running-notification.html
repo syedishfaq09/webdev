@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(215, 187, 240);
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        width: 200px;
+        height: 50px;
+        background-color: antiquewhite;
+        font-size: 30px;
+        padding: 10px;
+        border: 2px solid;
+        border-radius: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        transition: all;
+       transition-duration: 0.3s;
+
+        cursor: pointer;
+        trans
+      }
+      p {
+        margin: 5%;
+        animation-name: first;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        animation-timing-function: ease;
+      }
+      @keyframes first {
+        from {
+          margin-left: 100%;
+        }
+        to {
+          margin-left: -200%;
+        }
+      }
+      .container:hover {
+        background-color: rgb(57, 231, 26);
+        width: 190px;
+        height: 45px;
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>i am coming, just wait for me</p>
+    </div>
+  </body>
+</html>
