@@ -1,0 +1,86 @@
+body,
+html {
+  background-color: rgb(238, 226, 226);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.container {
+  background: linear-gradient(135deg, rgb(115, 115, 250), rgb(154, 154, 199));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transition: background-color 1s ease-in-out;
+}
+.content {
+  text-align: center;
+  background-color: rgb(255, 255, 255, 0.9);
+  padding: 30px 50px;
+  max-width: 400px;
+  border-radius: 20px;
+  transition: all 0.5s ease-in;
+  /* transition: transform 0.8s ease; */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.logo {
+  width: 80%;
+  height: 75px;
+  object-fit: contain;
+}
+h1 {
+  color: rgb(106, 89, 235);
+  margin-bottom: 20px;
+}
+p {
+  color: rgb(72, 51, 51);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+input[type="email"] {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid rgb(102, 39, 158);
+  margin-bottom: 1rem;
+  transition: background-color 0.5s ease-in-out;
+}
+input[type="text"] {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid rgb(102, 39, 158);
+  margin-bottom: 1rem;
+  transition: background-color 0.5s ease-in-out;
+}
+button {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: blue;
+  color: azure;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+  box-shadow: 0 5px 10px rgb(65, 64, 64);
+}
+button:hover {
+  background-color: blueviolet;
+}
+input:hover {
+  background-color: antiquewhite;
+}
+.content:hover {
+  background-color: rgb(109, 239, 49);
+  border: 1px solid;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(0.99);
+}
+.content:active {
+  transform: scale(0.5);
+}
+.container:hover {
+  background: rgb(38, 4, 97);
+}
+.container:has(.content:hover) {
+  background: linear-gradient(135deg, rgb(115, 115, 250), rgb(154, 154, 199));
+}

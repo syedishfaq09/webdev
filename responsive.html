@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .responsive {
+        height: 500px;
+        width: 700px;
+        background-color: blue;
+        color: bisque;
+      }
+      @media only screen and (max-width: 650px) {
+        .responsive {
+          width: 600px;
+          background-color: brown;
+        }
+      }
+      @media only screen and (max-width: 550px) {
+        .responsive {
+          width: 500px;
+          background-color: rgb(104, 229, 20);
+        }
+      }
+      @media only screen and (max-width: 450px) {
+        .responsive {
+          width: 400px;
+          background-color: rgb(30, 49, 18);
+        }
+      }
+      @media only screen and (max-width: 350px) {
+        .responsive {
+          width: 200px;
+          background-color: rgb(224, 27, 188);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="responsive">
+      this box is changing color based on screen size.
+    </div>
+  </body>
+</html>
